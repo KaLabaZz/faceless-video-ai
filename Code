@@ -1,0 +1,40 @@
+faceless-video-ai/
+├── package.json
+├── .env.example
+├── .env.local (لاحقاً)
+├── next.config.js
+├── tsconfig.json
+├── drizzle.config.ts
+├── middleware.ts
+├── README.md
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── globals.css
+│   ├── dashboard/
+│   │   └── page.tsx
+│   ├── pricing/
+│   │   └── page.tsx
+│   └── api/
+│       ├── auth/
+│       │   └── route.ts
+│       ├── video/
+│       │   ├── generate/route.ts
+│       │   └── status/[id]/route.ts
+│       ├── stripe/
+│       │   └── webhook/route.ts
+│       └── health/route.ts
+├── lib/
+│   ├── db.ts
+│   ├── openai.ts
+│   ├── elevenlabs.ts
+│   ├── stripe.ts
+│   └── auth.ts
+├── db/
+│   ├── schema.ts
+│   └── migrations/
+│       └── 0001_initial.sql
+└── components/
+    ├── Header.tsx
+    ├── VideoGenerator.tsx
+    └── PricingCard.tsx
